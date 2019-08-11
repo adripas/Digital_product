@@ -1,0 +1,29 @@
+@media (max-width: 600px){
+  .products{
+    display: inherit;
+    height: auto;
+  }
+.product{
+  margin-top: auto;
+}
+.main_section{
+  padding: 4%;
+}
+
+.section_images, .mentions{
+  display: inherit;
+
+}
+.section_images_content h3{
+  text-align: center;
+}
+.section_images_content img{
+  margin-left: 20%;
+}
+
+p .footer_contact {
+padding-left: inherit;
+
+  }
+
+}

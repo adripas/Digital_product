@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+/* -------Variables */
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:#313337;
+/*Espaciado*/
+--space:10px;
+/*Tipografia*/
+--normal:12px;
+--normal_title: 13px;
+/* Box Shadow */
+--box: 0px 0 2px 1px #e6e5e9;
+
+
+}
+/* -------Variables */html, body{
+  padding: 0;
+  margin: 0;
+  font-size: var(--normal);
+  font-family: 'Open Sans,bold', sans-serif;
+}
+
+label{
+  font-size: var(--normal);
+}
+nav{
+  display: flex;
+  background-color:var(--green-color);
+  padding: 10px;
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+
+display: flex;
+}
+
+nav li{
+  padding-left: 20PX;
+  list-style: none;
+}
+nav li a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+nav li a:hover{
+color: var(--black-color);
+}
+/* ------------------------------------------Main section */
+
+.main_section{
+  padding: 20%;
+  text-align: center;
+}
+
+.products{
+  background-image: url(../images/curve.png);
+
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.product{
+  padding: 10px;
+  margin-top: -350px;
+}
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box) ;
+}
+.img_content{
+  text-align: center;
+}
+.main_button {
+  background-color: var(--green-color);
+  width: 100%; /*ocupa el 100 % del espacio de la tarjeta*/
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+background-color: #6e9944;
+cursor: pointer;
+}
+/* parte ejercicio */
+
+.all{
+  background-color: #dfd9d9;
+  width: 100%;
+}
+.section_images, .mentions, .mentions_title{
+  width: auto;
+  background-color: var(--white-color);
+}
+
+/*.first{
+
+  padding: 15%;
+
+}*/
+.section_images{
+  padding: 15%;
+  display: flex;
+  /*padding: 155px 239px 33px 239px;*/
+/*  padding-right: 6%;*/
+}
+.section_images img{
+  width: 138px;
+  height: 113px;
+
+}
+.section_images_content{
+  /*margin-right: 195px*/
+  margin-right: 25%;
+}
+
+.section_images_content h3{
+  /*margin-right: 195px*/
+  font-size:var(--normal_title);
+  font-weight: bold;
+  text-align: center;
+
+}
+.section_text_content p{
+
+  font-size: var(--normal);
+}
+
+/* no lo estoy usando
+.section_text{
+  display: flex;
+ padding: 0 223px 6% 223px;
+  padding-right: 6%;
+}
+.section_text h3{
+  font-size:var(--normal_title);
+  font-weight: bold;
+  text-align: center;
+  }
+
+.section_text_content{
+  /*margin-right: 186px;
+  margin-right: 28%;
+}
+
+.section_text_content p{
+  height: 53px;
+  width: 154px;
+  font-size: var(--normal);
+}
+*/
+.mentions_title{
+  text-align: center;
+  padding: 6% 0 3% 0;
+  margin-top: 1px;
+
+}
+.mentions{
+  display: flex;
+/*padding-left: 138px;*/
+padding-left: 10%
+}
+
+.mentions_name{
+  border-radius:2px;
+  box-shadow: 0px 3px 6px #c1bcbc;
+  height: 187px;
+  width: 239px;
+/*  margin-right: 10px;*/
+margin-right: 1%;
+}
+
+.mentions_name h1{
+  font-size: var(--normal_title);
+  font-weight: bold;
+  margin: 1px 9px;
+}
+.mentions_name p{
+  padding: 0 9px 11px 10px;
+}
+
+.mentions_name_image img{
+  height:104px ;
+  width:239px ;
+}
+
+/* --------------------producto.html    */
+
+.main_product{
+  font-weight: bold;
+  font-size: var(--normal_title);
+  padding: 5%;
+}
+
+/* --------------------venta.html    */
+
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+.modulo_pago_images{
+  margin: auto;
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+}
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border-radius:2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box; /* desde donde va a tomar referencia ese 100% de ancho del elemento que lo contiene, respeta espacio del elemento qeu lo contiene*/
+}
+.modulo_pago .main_button{
+  margin-top: 10px;
+
+}
+
+/* ---------------------------------*/
+
+.footer{
+ display: flex;
+  background-color: #313337;
+  height: 60px;
+  width: 100%;
+  font-size: var(--normal);
+  color: var(--white-color);
+  margin-top: 55px;
+  }
+
+  .footer p{
+    width: 50%;
+    margin: 0;
+    padding: 22px 16px 0 16px;
+  }
+  p .footer_contact {
+padding-left: 80%;
+  }
+  .footer_contact a{
+    color:var(--green-color);
+  }
